@@ -1,7 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ShowroomController;
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,6 +17,8 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/showroom', [ShowroomController::class,'index'])-> name('showroom.index');
-Route::get('/showroom/create', [ShowroomController::class,'create'])-> name('showroom.create');
-Route::post('//showroom/store', [ShowroomController::class,'store'])-> name('showroom.store');
+Route::get('/showroom', [ShowroomController::class,'index'])->name('showroom.index');
+
+Route::get('/showroom/create', [ShowroomController::class,'create'])->name('showroom.create');
+
+Route::post('/showroom/store', [ShowroomController::class,'store'])->name('showroom.store');

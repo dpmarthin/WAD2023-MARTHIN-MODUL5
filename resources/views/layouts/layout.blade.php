@@ -240,7 +240,7 @@
 </head>
 
 <body>
-  @include('navbar')
+  @include('layouts.navbar')
 
   @yield('content')
 

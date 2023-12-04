@@ -14,5 +14,6 @@ class Showroom extends Model
     protected $fillable = [
         'id', 'nama_mobil', 'brand_mobil',
         'warna_mobil', 'tipe_mobil', 'harga_mobil',
+        'created_at', 'updated_at'
     ];
 }

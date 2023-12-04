@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('warna_mobil');
             $table->string('tipe_mobil');
             $table->integer('harga_mobil');
+            $table->timestamps();
         });
     }
 
